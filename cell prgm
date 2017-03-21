@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+ 
+int cellCompete(int *cells ,int day){
+//write your code here
+ 
+for (int i=0;i<day;i++){
+ 
+ cells[-1]=0; //assumptions
+ cells[8]=0;//assumptions
+ int u[8]; //another array to copy value
+ for (int i=-1;i<9;i++){
+ u[i]=cells[i]; 
+ }
+ 
+ for(int j=0;j<8;j++){
+ if(u[j-1]==u[j+1]){ //comparing the value of the neighbouring cells of u[]
+ cells[j]=0; //changing value of cell according to condition
+ }
+ else
+ cells[j]=1;
+ } }
+ 
+for (int i=0;i<8;i++){
+cout<<cells[i];
+}
+return 0;}
+ 
+ 
+int main(){ //main function
+int days,cells[]={1,0,0,0,0,1,0,0}; //array to pass through function
+int *cellsptr=cells; //creating array values to pointer
+cout<<"enter days:"; //for days
+cin>>days; 
+cout<<"n[1,0,0,0,0,1,0,0]n";
+cellCompete(cellsptr, days); //passing to function
+return 0;
+}
