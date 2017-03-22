@@ -1,0 +1,37 @@
+ #include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int n,a,b,c; 
+    scanf("%d",&n);
+    for(int a0 = 0; a0 < n; a0++)
+    {
+        int grade; 
+        scanf("%d",&grade);
+        if(grade>=38)
+          {
+            a=(grade%5);
+            b=5-a;
+   
+            c=grade+b;
+         if((c-grade)<3)
+           { printf("%d\n",c);
+           }
+          else
+          {
+              printf("%d\n",grade);
+          }
+        }
+       else
+        {
+           printf("%d\n",grade);
+       }
+        
+    }
+    return 0;
+}
