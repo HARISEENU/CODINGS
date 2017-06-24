@@ -1,0 +1,29 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+String s=sc.next();
+char a=sc.next().charAt(0);
+int len=s.length();
+int i;
+for(i=0;i<len;i++)
+{
+    if(s.charAt(i)!=a)
+    {
+        System.out.print(s.charAt(i));
+    }
+    
+    if(s.charAt(i)==a)
+    {
+        break;
+    }
+}
+
+	}
+}
+
+ex:
+I/P:Everest 
+     e
+O/P:Eve
