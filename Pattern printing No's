@@ -1,0 +1,29 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int i,j,k;
+		for(i=1;i<=n;i++)
+		{
+		    for(j=1;j<=i;j++)
+		    {
+		        for(k=j;k<=j;k++)// DONT PRINT for(k=1;k<=j;k++) here we want to start from j , so k=j;
+		        {
+		            System.out.print(k+" ");
+		        }
+		    }
+		    System.out.println();
+		}
+
+	}
+}
+OUTPUT
+5
+1 
+1 2
+1 2 3
+1 2 3 4 
+1 2 3 4 5
