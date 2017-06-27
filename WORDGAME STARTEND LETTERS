@@ -1,0 +1,60 @@
+package programs;
+
+import java.util.Scanner;
+
+public class game {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		
+				int len=0;
+				
+				String str;
+				
+		Scanner sc=new Scanner(System.in);
+		int l=sc.nextInt();          //  6
+		String s[]=new String[l];
+		for(int i=0;i<l;i++)
+			{
+			    s[i]=sc.next();      
+			}
+		int a=sc.nextInt();           //3
+		 str=sc.next();               //egg
+		len=str.length(); 
+		 for(int j=0;j<a-1;j++)
+		 {
+		   for(int i=0;i<l;i++)
+		    {
+		      if(str.charAt(len-1)==s[i].charAt(0))
+		      {
+		        str=s[i];
+		        len=str.length();
+		        break;
+		      } 
+		    }
+		 }  
+		   System.out.println(str);
+		   }
+}
+	
+// PROBLEM AND OUTPUT
+
+//6
+//egg
+//tiger
+//rampage
+//goat
+//wrist
+//mirror
+//3
+//egg
+
+//OUTPUT
+//tiger
+
+// The words in the game sequence are egg,goat,tiger,rampage,egg...so 3rd word Tiger is printed as output.
