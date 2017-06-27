@@ -19,12 +19,11 @@ public class Hello {
 		          if(a[j]>a[i])
 		          {
 		              System.out.print(a[j]+" ");
-		              count++;
 		              break;
 		          }
 		          
 		      }
-		      if(j==n)
+		      if(j==n)             //IF IT GOES TO LAST INDEX ELEMENT ,THEN NO ELEMENT IS GREATER THAN THAT NO...SO RETURN -1.
 		      {
 		      System.out.print("-1"+" ");
 		      }
