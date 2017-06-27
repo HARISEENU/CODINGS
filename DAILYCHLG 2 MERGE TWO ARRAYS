@@ -4,18 +4,18 @@ public class Hello {
     public static void main(String[] args) {
 		//Your Code Here
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();          //  4-1 5 7 7
+		int n=sc.nextInt();          //  4
 		int a[]=new int[50];
 		int i,j;
 		for(i=0;i<n;i++)
 		{
-		    a[i]=sc.nextInt();
+		    a[i]=sc.nextInt();      // 1 5 7 7
 		}
-		int m=sc.nextInt();        // 4- 0 1 2 3 
-	    int l=n+m;                 //8
+		int m=sc.nextInt();        // 4
+	    int l=n+m;                      //8
 		for(j=n;j<l;j++)
 		{
-	    a[j]=sc.nextInt();
+	    a[j]=sc.nextInt();             // 0 1 2 3 
 		}
 		
 		int temp=0;
@@ -23,7 +23,7 @@ public class Hello {
 		{
 		   for(j=i+1;j<l;j++)
 		   {
-		       if(a[i]>a[j])      ///// ARRAY SORTING
+		       if(a[i]>a[j])      ///// ARRAY SORTING IN ASCENDING OR NON DECREASING ORDER
 		       {
 		           temp=a[i];
 		           a[i]=a[j];
@@ -33,7 +33,7 @@ public class Hello {
 		}
        for(i=0;i<l;i++)
        {
-          System.out.println(a[i]);     //8- 0 1 1 2 3 5 7 7
+          System.out.println(a[i]);     //8 -> 0 1 1 2 3 5 7 7
     }
 
 	}
