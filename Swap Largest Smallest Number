@@ -1,0 +1,83 @@
+package programs;
+
+import java.util.Scanner;
+
+public class swap_largestsmallestno {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Scanner sc=new Scanner(System.in);
+			int n=sc.nextInt();
+			int f,i,t,temp=0;
+			int a[]=new int[n];
+			
+			for(i=0;i<n;i++)
+			{
+			    a[i]=sc.nextInt();
+			}
+			if(n==2)
+			{   temp=a[0];
+			    a[0]=a[1];
+			    a[1]=temp;
+			
+			for(i=0;i<n;i++)
+			{
+			    System.out.print(a[i]+" ");
+			}
+			}
+		else{
+			f=a[0];
+			for(i=1;i<n;i++)
+			{
+			    if(f<a[i])
+			    {
+			        f=a[i];
+			    }
+			}
+System.out.println(f);
+			t=a[0];
+			for(i=1;i<n;i++)
+			{
+			    if(t>a[i])
+			    {
+			       t=a[i];
+			    }
+			}
+System.out.println(t);
+			for(i=0;i<n;i++)
+			{
+			    if(a[i]==f)
+			    {
+			        a[i]=t;
+			        break;
+			        
+			    }
+			    
+			}
+			for(i=0;i<n;i++)
+			{
+			    if(a[i]==t)
+			    {
+			        a[i]=f;
+			        break;
+			        
+			    }
+			}
+			
+		  for(i=0;i<n;i++)
+		  {
+		      System.out.print(a[i]+" ");
+		  }
+		}
+		}
+}
+OUTPUT
+10
+3 25 42 56 78 90 9000 34 54 66 30
+o/p
+9000
+3
+9000 25 42 56 78 90 3 34 54 66 
