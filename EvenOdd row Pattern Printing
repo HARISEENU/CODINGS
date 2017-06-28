@@ -29,3 +29,7 @@ public class Hello {
 
 	}
 }
+OUTPUT
+*1        //For odd row ,* should print from left
+21*      // For even row, * shld print from right
+*123     //For odd row ,* should print from left
