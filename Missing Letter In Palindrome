@@ -1,0 +1,30 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		String n;
+		int i;
+		char b=0;
+		StringBuffer r=new StringBuffer(s);
+		n=r.reverse().toString();
+		for(i=0;i<s.length();i++)
+		{
+		  if(s.charAt(i)!=n.charAt(i))
+          {
+              b=s.charAt(i);
+              break;
+          }
+		}
+		System.out.println(b);
+	}
+  }
+  
+  OUTPUT
+  madm  -  input   i.e palindrome is madam so "a" is missing.
+  a     -  output
+  mikkm  - i/p
+  i      -o/p
+
