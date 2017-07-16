@@ -1,0 +1,41 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();             //Delegate
+		String n,m;
+		int i,j;
+		int count=0;
+	    int	len=s.length();              //8
+		
+		
+		for(i=0;i<len-1;i++)
+		{
+		    for(j=i+1;j<=len;j++)
+		    {
+		       n =s.substring(i,j);
+		     //  System.out.println(n);
+		       StringBuffer sb=new StringBuffer(n);
+		       m=sb.reverse().toString();
+		     //  System.out.println(m);
+		       if(n.equals(m))
+		       {
+		           count=count+1;
+		         //  System.out.println(count);
+		           
+		       }
+		       
+		    }
+		}
+		System.out.println(count-(len-1));
+
+	}
+}
+
+OUTPUT
+Delegate
+1        - ele
+Everest
+2        -eve,ere
