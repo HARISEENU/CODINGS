@@ -17,3 +17,11 @@ public class Hello {
 
 	}
 }
+INPUT 
+30 40
+OUTPUT
+10
+INPUT
+10 15
+OUTPUT
+5
