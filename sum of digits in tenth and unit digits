@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,b=0,sum=0,i=0;
+scanf("%d",&n);
+while(i<2)
+{
+    b=n%10;
+    sum=sum+b;
+    n=n/10;
+    i++;
+}
+printf("%d",sum);
+
+}
+
+or
+
+JAVA
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int a=sc.nextInt();
+	int sum=0;
+	int i=2;
+	while(i>0)
+	{
+	   n=a%10;
+	   sum=sum+n;
+	   a=a/10;
+	   i--;
+	}
+	System.out.println(sum);
+	}
+}
