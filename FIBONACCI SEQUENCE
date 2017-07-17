@@ -4,8 +4,9 @@ public class Hello {
     public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
     int n=sc.nextInt();
-    int a=0,b=1;
-    int f,i=2;
+    long a=0,b=1;
+    long f;
+    int i=2;
     System.out.print(a+" "+b+" ");
     while(i<n)
     {
