@@ -1,0 +1,45 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	float a=sc.nextInt();
+	float b=sc.nextInt();
+	float c=sc.nextInt();
+	float p,m,n,d;
+	if(a%b==0&&a%c==0)
+	{
+	    System.out.print("0.000");
+	}
+	else if(a%b==0)
+	{
+	    d=(b/100)*a;
+	    n=a-d;
+	    System.out.print(n+"00");
+	    
+	}
+	else  if(a%c==0)
+	{
+	    p=(c/100)*a;
+	    
+	    m=a-p;
+	    System.out.print(m+"00");
+	}
+	
+	else{
+	    System.out.print(a+"00");
+	}
+
+	}
+}
+
+OUTPUT  if a is divisible b,then b% of discount will applied to the amount .similarly for c,if it is divisible by both b and c then no amount need to be paid;
+500
+20
+50
+0.000  -o/p
+
+100
+9
+10
+90.000  -o/p
