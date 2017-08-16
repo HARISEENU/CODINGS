@@ -1,0 +1,42 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int n=(a/2)+1;                    CALCULATING -  ("TOTAL NO OF ROWS")
+    int i,m=1,k,l,j;
+    for(i=1;i<=n;i++)
+    {
+            j=m;
+            m=m+1;
+            for(k=1;k<=(a-j)/2;k++)
+            {
+              System.out.print("!");
+            }
+            for(l=1;l<=j;l++)
+            {
+                System.out.print("*");
+            }
+            for(k=1;k<=(a-j)/2;k++)
+            {
+                System.out.print("!");
+            }
+            System.out.println();
+    
+    }
+
+	}
+}
+
+OUTPUT
+5        - a
+!!*!!
+!***!
+*****
+9       -  a
+!!!!*!!!!
+!!!***!!!
+!!*****!!
+!*******!
+*********
